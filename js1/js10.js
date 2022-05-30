@@ -1,7 +1,7 @@
 Window;
 
 let params = `scrollbars=no,width=500,height=500,left=-1000,top=-1000,resizable=no,status=no,location=no,toolbar=no,menubar=no`;
-let win = window.open("/", "Test", params);
+let win = window.open("/JS-Part-3/", "Test", params);
 win.focus();
 win.onload = function () {
     win.document.body.insertAdjacentHTML("afterbegin", "<h1>Hello World!</h1>");
