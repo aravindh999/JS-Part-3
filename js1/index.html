@@ -7,6 +7,21 @@
         <title>Document</title>
     </head>
     <body>
+        <input type="file" onchange="readFile(this)" />
+        <h1>File Content:</h1>
+        <div id="fileCon"></div>
+        <canvas
+            id="canvasElem"
+            width="100"
+            height="100"
+            style="border: 1px solid"
+        ></canvas>
+        <input type="button" value="Submit" onclick="submit()" /><br />
+        <br />
+        <form id="formElem">
+            <input type="text" name="Customer" value="John" />
+            <input type="submit" />
+        </form>
         <script src="js10.js"></script>
     </body>
 </html>
