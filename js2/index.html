@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Cookies|Animations</title>
+        <style>
+            img {
+                cursor: pointer;
+            }
+            #flyjet.shrink {
+                width: 80px;
+                height: 48px;
+                transition: all 1s cubic-bezier(0.25, 1.5, 0.75, 1.5);
+            }
+            #flyjet.grow {
+                width: 400px;
+                height: 240px;
+                transition: all 1s cubic-bezier(0.25, 1.5, 0.75, 1.5);
+            }
+            #showCircle {
+                top: 400;
+            }
+        </style>
+    </head>
+    <body>
+        <img id="flyjet" class="shrink" src="flyjet.jpg" />
+        <br />
+        <h1>time-formatted element (Custom)</h1>
+        <time-formatted
+            id="elem"
+            hour="numeric"
+            minute="numeric"
+            second="numeric"
+        ></time-formatted>
+        <br /><br />
+        <script src="js11.js"></script>
+    </body>
+</html>
